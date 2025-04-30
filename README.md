@@ -1,66 +1,39 @@
-# manavfrontin
-import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react";
+# 🛒 The Viewer Market
 
-export default function HomePage() {
-  return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
-      {/* Header */}
-      <header className="bg-white shadow sticky top-0 z-50">
-        <div className="container mx-auto flex items-center justify-between p-4">
-          <h1 className="text-2xl font-bold text-blue-600">The Viewer Market</h1>
-          <div className="flex items-center gap-2">
-            <Input placeholder="Search products..." className="w-64" />
-            <Button variant="outline" size="icon">
-              <Search className="h-5 w-5" />
-            </Button>
-            <Button className="ml-4">Post Ad</Button>
-          </div>
-        </div>
-      </header>
+A modern, stylish e-commerce frontend for buying and selling both second-hand and new products — inspired by platforms like HamroBazar, OLX, and Facebook Marketplace.
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-100 to-blue-50 py-12">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-semibold mb-2">Buy & Sell Anything</h2>
-          <p className="text-lg text-gray-600">From new gadgets to second-hand treasures</p>
-        </div>
-      </section>
+---
 
-      {/* Categories */}
-      <section className="container mx-auto py-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
-        {["Electronics", "Vehicles", "Clothing", "Home"].map((category) => (
-          <Card key={category} className="cursor-pointer hover:shadow-lg transition">
-            <CardContent className="p-4 text-center font-medium">{category}</CardContent>
-          </Card>
-        ))}
-      </section>
+## 🚀 Live Preview
 
-      {/* Latest Listings */}
-      <section className="container mx-auto py-8">
-        <h3 className="text-xl font-semibold mb-4">Latest Listings</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {[1, 2, 3].map((item) => (
-            <Card key={item} className="hover:shadow-md">
-              <CardContent className="p-4">
-                <div className="h-40 bg-gray-200 mb-2" />
-                <h4 className="font-semibold">Product Title {item}</h4>
-                <p className="text-sm text-gray-600">Rs. {item * 5000}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
+📍 Coming Soon (Deploy via Vercel or Netlify)
 
-      {/* Footer */}
-      <footer className="bg-white border-t mt-12">
-        <div className="container mx-auto p-4 text-center text-sm text-gray-500">
-          © 2025 The Viewer Market — Buy & Sell with Ease
-        </div>
-      </footer>
-    </div>
-  );
-}
+---
+
+## ✨ Features
+
+- 🔍 Smart search with Lucide icons
+- 🛍️ Product categories (Electronics, Vehicles, Clothing, Home)
+- 🆕 Latest listings preview
+- 🧑‍💻 Clean UI and layout using Tailwind CSS
+- 📱 Mobile-responsive
+- 🧩 Reusable components ready for expansion
+
+---
+
+## 🛠️ Built With
+
+- **React (Vite)**
+- **Tailwind CSS**
+- **Lucide Icons**
+- **Reusable Components System**
+
+---
+
+## 📦 Installation
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/viewer-market.git
+cd viewer-market
